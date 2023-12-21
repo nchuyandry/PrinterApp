@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="Z:\printer\printer.clpprj">
+	<settings><PM_URL><![CDATA[http://localhost/id/]]></PM_URL><PM_HOME_URL><![CDATA[http://localhost/id/]]></PM_HOME_URL><PM_LIBS><![CDATA[]]></PM_LIBS><PM_FTP_CONNECTION><![CDATA[]]></PM_FTP_CONNECTION><PM_FTP_DIR><![CDATA[]]></PM_FTP_DIR><PM_FTP_UPLOAD_ON_SAVE><![CDATA[INT:0]]></PM_FTP_UPLOAD_ON_SAVE></settings><removed value=";"/><added value=""/><lastopfiles>
+		<file name="Z:\printer\application\views\template.php"/>
+		<file name="Z:\printer\assets\css\timeline.css"/>
+		<file name="Z:\printer\application\views\login.php"/>
+		<file name="Z:\printer\application\views\masuk.php"/>
+		<file name="Z:\printer\application\views\layout\sidebar.php"/>
+		<file name="Z:\printer\application\views\masterp.php"/>
+		<file name="Z:\printer\application\views\historitiket.php"/>
+		<file name="Z:\printer\application\controllers\Home.php"/>
+		<file name="Z:\printer\application\controllers\Login.php"/>
+		<file name="Z:\printer\application\views\dashboard.php"/>
+		<file name="Z:\printer\application\views\alokasi.php"/>
+		<file name="Z:\printer\application\config\routes.php"/>
+		<file name="Z:\printer\application\models\Modb.php"/>
+	</lastopfiles>
+	<errors version="5.11">
+		<errfile name="Z:\printer\application\views\layout\sidebar.php">
+			<error val="20;0;32;0;2002;1;"/>
+		</errfile>
+		<errfile name="Z:\printer\application\views\template.php">
+			<error val="27;155;39;155;2002;1;"/>
+			<error val="5;142;40;142;2502;1;"/>
+			<error val="5;141;41;141;2502;1;"/>
+		</errfile>
+		<errfile name="Z:\printer\application\views\masuk.php">
+			<error val="120;74;159;74;2002;1;"/>
+		</errfile>
+		<errfile name="Z:\printer\application\views\masterp.php">
+			<error val="81;42;120;42;2002;1;"/>
+		</errfile>
+		<errfile name="Z:\printer\application\views\historitiket.php">
+			<error val="120;67;159;67;2002;1;"/>
+		</errfile>
+		<errfile name="Z:\printer\application\views\alokasi.php">
+			<error val="121;17;160;17;2002;1;"/>
+		</errfile>
+	</errors>
+	<cakedata>
+	</cakedata>
+	<dplmenupath>
+	</dplmenupath><laravael>
+	</laravael><smartyassings>
+	</smartyassings><twigtemplate>
+	</twigtemplate><yiidata>
+	</yiidata>
+	<todoblock>
+		<todofile name="Z:\printer\system\core\Loader.php">
+			<todo name="todo Figure out a way to move this to the constructor" pos="5;148"/>
+		</todofile>
+		<todofile name="Z:\printer\system\core\Output.php">
+			<todo name="todo We need to figure out how to permit headers to be cached." pos="5;209"/>
+		</todofile>
+		<todofile name="Z:\printer\system\database\DB_forge.php">
+			<todo name="todo Remove deprecated $_after option in 3.1+" pos="5;558"/>
+		</todofile>
+		<todofile name="Z:\printer\system\database\DB_query_builder.php">
+			<todo name="@todo error" pos="4;2003"/>
+		</todofile>
+		<todofile name="Z:\printer\system\database\drivers\sqlite3\sqlite3_driver.php">
+			<todo name="todo Implement use of SQLite3::querySingle(), if needed" pos="5;120"/>
+		</todofile>
+		<todofile name="Z:\printer\system\database\drivers\sqlite3\sqlite3_forge.php">
+			<todo name="todo implement drop_column(), modify_column()" pos="5;135"/>
+		</todofile>
+		<todofile name="Z:\printer\system\database\drivers\sqlite\sqlite_forge.php">
+			<todo name="todo implement drop_column(), modify_column()" pos="5;115"/>
+		</todofile>
+		<todofile name="Z:\printer\system\helpers\date_helper.php">
+			<todo name="todo Remove in version 3.1+." pos="5;134"/>
+		</todofile>
+		<todofile name="Z:\printer\system\helpers\file_helper.php">
+			<todo name="todo Remove in version 3.1+." pos="5;58"/>
+		</todofile>
+		<todofile name="Z:\printer\system\helpers\security_helper.php">
+			<todo name="todo Remove in version 3.1+." pos="5;89"/>
+		</todofile>
+		<todofile name="Z:\printer\system\helpers\string_helper.php">
+			<todo name="todo Remove in version 3.1+." pos="5;64"/>
+			<todo name="todo: remove in 3.1+" pos="19;229"/>
+			<todo name="todo: remove in 3.1+" pos="20;232"/>
+			<todo name="todo Remove in version 3.1+." pos="5;292"/>
+		</todofile>
+		<todofile name="Z:\printer\system\helpers\url_helper.php">
+			<todo name="todo Remove old 'dash' and 'underscore' usage in 3.1+." pos="5;472"/>
+		</todofile>
+		<todofile name="Z:\printer\system\libraries\Xmlrpc.php">
+			<todo name="@todo - this needs to be made more general purpose" pos="6;1574"/>
+		</todofile>
+	</todoblock>
+	<dbgurls>
+	</dbgurls>
+	<filescache>
+		<file name="Z:\printer\system\libraries\Session\drivers\Session_redis_driver.php" crc="1568894925"/>
+		<file name="Z:\printer\system\libraries\Session\drivers\Session_memcached_driver.php" crc="1568894925"/>
+		<file name="Z:\printer\system\libraries\Session\drivers\Session_files_driver.php" crc="1568894925"/>
+		<file name="Z:\printer\system\libraries\Session\drivers\Session_database_driver.php" crc="1568894925"/>
+		<file name="Z:\printer\system\libraries\Session\drivers\index.html" crc="1568894925"/>
+		<file name="Z:\printer\system\libraries\Session\SessionHandlerInterface.php" crc="1568894925"/>
+		<file name="Z:\printer\system\libraries\Session\Session_driver.php" crc="1568894925"/>
+		<file name="Z:\printer\system\libraries\Session\Session.php" crc="1568894925"/>
+		<file name="Z:\printer\system\libraries\Session\index.html" crc="1568894925"/>
+		<file name="Z:\printer\system\libraries\Javascript\Jquery.php" crc="1568894925"/>
+		<file name="Z:\printer\system\libraries\Javascript\index.html" crc="1568894925"/>
+		<file name="Z:\printer\system\libraries\Cache\drivers\index.html" crc="1568894925"/>
+		<file name="Z:\printer\system\libraries\Cache\drivers\Cache_wincache.php" crc="1568894925"/>
+		<file name="Z:\printer\system\libraries\Cache\drivers\Cache_redis.php" crc="1568894925"/>
+		<file name="Z:\printer\system\libraries\Cache\drivers\Cache_memcached.php" crc="1568894925"/>
+		<file name="Z:\printer\system\libraries\Cache\drivers\Cache_file.php" crc="1568894925"/>
+		<file name="Z:\printer\system\libraries\Cache\drivers\Cache_dummy.php" crc="1568894925"/>
+		<file name="Z:\printer\system\libraries\Cache\drivers\Cache_apc.php" crc="1568894925"/>
+		<file name="Z:\printer\system\libraries\Cache\index.html" crc="1568894925"/>
+		<file name="Z:\printer\system\libraries\Cache\Cache.php" crc="1568894925"/>
+		<file name="Z:\printer\system\libraries\Zip.php" crc="1568894925"/>
+		<file name="Z:\printer\system\libraries\Xmlrpcs.php" crc="1568894925"/>
+		<file name="Z:\printer\system\libraries\Xmlrpc.php" crc="1568894925"/>
+		<file name="Z:\printer\system\libraries\User_agent.php" crc="1568894925"/>
+		<file name="Z:\printer\system\libraries\Upload.php" crc="1568894925"/>
+		<file name="Z:\printer\system\libraries\Unit_test.php" crc="1568894925"/>
+		<file name="Z:\printer\system\libraries\Typography.php" crc="1568894925"/>
+		<file name="Z:\printer\system\libraries\Trackback.php" crc="1568894925"/>
+		<file name="Z:\printer\system\libraries\Table.php" crc="1568894925"/>
+		<file name="Z:\printer\system\libraries\Profiler.php" crc="1568894925"/>
+		<file name="Z:\printer\system\libraries\Parser.php" crc="1568894925"/>
+		<file name="Z:\printer\system\libraries\Pagination.php" crc="1568894925"/>
+		<file name="Z:\printer\system\libraries\Migration.php" crc="1568894925"/>
+		<file name="Z:\printer\system\libraries\Javascript.php" crc="1568894925"/>
+		<file name="Z:\printer\system\libraries\index.html" crc="1568894925"/>
+		<file name="Z:\printer\system\libraries\Image_lib.php" crc="1568894925"/>
+		<file name="Z:\printer\system\libraries\Ftp.php" crc="1568894925"/>
+		<file name="Z:\printer\system\libraries\Form_validation.php" crc="1568894925"/>
+		<file name="Z:\printer\system\libraries\Encryption.php" crc="1568894925"/>
+		<file name="Z:\printer\system\libraries\Encrypt.php" crc="1568894925"/>
+		<file name="Z:\printer\system\libraries\Email.php" crc="1568894925"/>
+		<file name="Z:\printer\system\libraries\Driver.php" crc="1568894925"/>
+		<file name="Z:\printer\system\libraries\Cart.php" crc="1568894925"/>
+		<file name="Z:\printer\system\libraries\Calendar.php" crc="1568894925"/>
+		<file name="Z:\printer\system\language\english\upload_lang.php" crc="1568894925"/>
+		<file name="Z:\printer\system\language\english\unit_test_lang.php" crc="1568894925"/>
+		<file name="Z:\printer\system\language\english\profiler_lang.php" crc="1568894925"/>
+		<file name="Z:\printer\system\language\english\pagination_lang.php" crc="1568894925"/>
+		<file name="Z:\printer\system\language\english\number_lang.php" crc="1568894925"/>
+		<file name="Z:\printer\system\language\english\migration_lang.php" crc="1568894925"/>
+		<file name="Z:\printer\system\language\english\index.html" crc="1568894925"/>
+		<file name="Z:\printer\system\language\english\imglib_lang.php" crc="1568894925"/>
+		<file name="Z:\printer\system\language\english\ftp_lang.php" crc="1568894925"/>
+		<file name="Z:\printer\system\language\english\form_validation_lang.php" crc="1568894925"/>
+		<file name="Z:\printer\system\language\english\email_lang.php" crc="1568894925"/>
+		<file name="Z:\printer\system\language\english\db_lang.php" crc="1568894925"/>
+		<file name="Z:\printer\system\language\english\date_lang.php" crc="1568894925"/>
+		<file name="Z:\printer\system\language\english\calendar_lang.php" crc="1568894925"/>
+		<file name="Z:\printer\system\language\index.html" crc="1568894925"/>
+		<file name="Z:\printer\system\helpers\xml_helper.php" crc="1568894925"/>
+		<file name="Z:\printer\system\helpers\url_helper.php" crc="1568894925"/>
+		<file name="Z:\printer\system\helpers\typography_helper.php" crc="1568894925"/>
+		<file name="Z:\printer\system\helpers\text_helper.php" crc="1568894925"/>
+		<file name="Z:\printer\system\helpers\string_helper.php" crc="1568894925"/>
+		<file name="Z:\printer\system\helpers\smiley_helper.php" crc="1568894925"/>
+		<file name="Z:\printer\system\helpers\security_helper.php" crc="1568894925"/>
+		<file name="Z:\printer\system\helpers\path_helper.php" crc="1568894925"/>
+		<file name="Z:\printer\system\helpers\number_helper.php" crc="1568894925"/>
+		<file name="Z:\printer\system\helpers\language_helper.php" crc="1568894925"/>
+		<file name="Z:\printer\system\helpers\inflector_helper.php" crc="1568894925"/>
+		<file name="Z:\printer\system\helpers\index.html" crc="1568894925"/>
+		<file name="Z:\printer\system\helpers\html_helper.php" crc="1568894925"/>
+		<file name="Z:\printer\system\helpers\form_helper.php" crc="1568894925"/>
+		<file name="Z:\printer\system\helpers\file_helper.php" crc="1568894925"/>
+		<file name="Z:\printer\system\helpers\email_helper.php" crc="1568894925"/>
+		<file name="Z:\printer\system\helpers\download_helper.php" crc="1568894925"/>
+		<file name="Z:\printer\system\helpers\directory_helper.php" crc="1568894925"/>
+		<file name="Z:\printer\system\helpers\date_helper.php" crc="1568894925"/>
+		<file name="Z:\printer\system\helpers\cookie_helper.php" crc="1568894925"/>
+		<file name="Z:\printer\system\helpers\captcha_helper.php" crc="1568894925"/>
+		<file name="Z:\printer\system\helpers\array_helper.php" crc="1568894925"/>
+		<file name="Z:\printer\system\fonts\index.html" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\sqlsrv\sqlsrv_utility.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\sqlsrv\sqlsrv_result.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\sqlsrv\sqlsrv_forge.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\sqlsrv\sqlsrv_driver.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\sqlsrv\index.html" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\sqlite3\sqlite3_utility.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\sqlite3\sqlite3_result.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\sqlite3\sqlite3_forge.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\sqlite3\sqlite3_driver.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\sqlite3\index.html" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\sqlite\sqlite_utility.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\sqlite\sqlite_result.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\sqlite\sqlite_forge.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\sqlite\sqlite_driver.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\sqlite\index.html" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\postgre\postgre_utility.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\postgre\postgre_result.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\postgre\postgre_forge.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\postgre\postgre_driver.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\postgre\index.html" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\pdo\subdrivers\pdo_sqlsrv_forge.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\pdo\subdrivers\pdo_sqlsrv_driver.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\pdo\subdrivers\pdo_sqlite_forge.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\pdo\subdrivers\pdo_sqlite_driver.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\pdo\subdrivers\pdo_pgsql_forge.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\pdo\subdrivers\pdo_pgsql_driver.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\pdo\subdrivers\pdo_odbc_forge.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\pdo\subdrivers\pdo_odbc_driver.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\pdo\subdrivers\pdo_oci_forge.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\pdo\subdrivers\pdo_oci_driver.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\pdo\subdrivers\pdo_mysql_forge.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\pdo\subdrivers\pdo_mysql_driver.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\pdo\subdrivers\pdo_informix_forge.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\pdo\subdrivers\pdo_informix_driver.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\pdo\subdrivers\pdo_ibm_forge.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\pdo\subdrivers\pdo_ibm_driver.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\pdo\subdrivers\pdo_firebird_forge.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\pdo\subdrivers\pdo_firebird_driver.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\pdo\subdrivers\pdo_dblib_forge.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\pdo\subdrivers\pdo_dblib_driver.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\pdo\subdrivers\pdo_cubrid_forge.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\pdo\subdrivers\pdo_cubrid_driver.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\pdo\subdrivers\pdo_4d_forge.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\pdo\subdrivers\pdo_4d_driver.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\pdo\subdrivers\index.html" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\pdo\pdo_utility.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\pdo\pdo_result.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\pdo\pdo_forge.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\pdo\pdo_driver.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\pdo\index.html" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\odbc\odbc_utility.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\odbc\odbc_result.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\odbc\odbc_forge.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\odbc\odbc_driver.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\odbc\index.html" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\oci8\oci8_utility.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\oci8\oci8_result.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\oci8\oci8_forge.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\oci8\oci8_driver.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\oci8\index.html" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\mysqli\mysqli_utility.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\mysqli\mysqli_result.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\mysqli\mysqli_forge.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\mysqli\mysqli_driver.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\mysqli\index.html" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\mysql\mysql_utility.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\mysql\mysql_result.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\mysql\mysql_forge.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\mysql\mysql_driver.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\mysql\index.html" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\mssql\mssql_utility.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\mssql\mssql_result.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\mssql\mssql_forge.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\mssql\mssql_driver.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\mssql\index.html" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\ibase\index.html" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\ibase\ibase_utility.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\ibase\ibase_result.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\ibase\ibase_forge.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\ibase\ibase_driver.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\cubrid\index.html" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\cubrid\cubrid_utility.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\cubrid\cubrid_result.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\cubrid\cubrid_forge.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\cubrid\cubrid_driver.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\drivers\index.html" crc="1568894925"/>
+		<file name="Z:\printer\system\database\index.html" crc="1568894925"/>
+		<file name="Z:\printer\system\database\DB_utility.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\DB_result.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\DB_query_builder.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\DB_forge.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\DB_driver.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\DB_cache.php" crc="1568894925"/>
+		<file name="Z:\printer\system\database\DB.php" crc="1568894925"/>
+		<file name="Z:\printer\system\core\compat\standard.php" crc="1568894925"/>
+		<file name="Z:\printer\system\core\compat\password.php" crc="1568894925"/>
+		<file name="Z:\printer\system\core\compat\mbstring.php" crc="1568894925"/>
+		<file name="Z:\printer\system\core\compat\index.html" crc="1568894925"/>
+		<file name="Z:\printer\system\core\compat\hash.php" crc="1568894925"/>
+		<file name="Z:\printer\system\core\Utf8.php" crc="1568894925"/>
+		<file name="Z:\printer\system\core\URI.php" crc="1568894925"/>
+		<file name="Z:\printer\system\core\Security.php" crc="1568894925"/>
+		<file name="Z:\printer\system\core\Router.php" crc="1568894925"/>
+		<file name="Z:\printer\system\core\Output.php" crc="1568894925"/>
+		<file name="Z:\printer\system\core\Model.php" crc="1568894925"/>
+		<file name="Z:\printer\system\core\Log.php" crc="1568894925"/>
+		<file name="Z:\printer\system\core\Loader.php" crc="1568894925"/>
+		<file name="Z:\printer\system\core\Lang.php" crc="1568894925"/>
+		<file name="Z:\printer\system\core\Input.php" crc="1568894925"/>
+		<file name="Z:\printer\system\core\index.html" crc="1568894925"/>
+		<file name="Z:\printer\system\core\Hooks.php" crc="1568894925"/>
+		<file name="Z:\printer\system\core\Exceptions.php" crc="1568894925"/>
+		<file name="Z:\printer\system\core\Controller.php" crc="1568894925"/>
+		<file name="Z:\printer\system\core\Config.php" crc="1568894925"/>
+		<file name="Z:\printer\system\core\Common.php" crc="1568894925"/>
+		<file name="Z:\printer\system\core\CodeIgniter.php" crc="1568894925"/>
+		<file name="Z:\printer\system\core\Benchmark.php" crc="1568894925"/>
+		<file name="Z:\printer\system\index.html" crc="1568894925"/>
+		<file name="Z:\printer\system\.htaccess" crc="1568894925"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\plugins\_plugin-perfect-scrollbar.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\vendor\_plugin-perfect-scrollbar.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\vendor\_plugin-animate-bootstrap-notify.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\utilities\_transform.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\utilities\_text.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\utilities\_spacing.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\utilities\_sizing.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\utilities\_shadows.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\utilities\_position.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\utilities\_helper.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\utilities\_floating.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\utilities\_backgrounds.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\mixins\opacity.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\mixins\_wizard.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\mixins\_vendor-prefixes.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\mixins\_popovers.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\mixins\_page-header.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\mixins\_modals.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\mixins\_inputs.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\mixins\_icon.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\mixins\_forms.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\mixins\_dropdown.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\mixins\_buttons.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\mixins\_badges.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\mixins\_background-variant.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\mixins\_alert.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\cards\_card-user.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\cards\_card-task.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\cards\_card-plain.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\cards\_card-map.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\cards\_card-chart.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\_white-content.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\_variables.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\_utilities.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\_type.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\_tables.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\_sidebar-and-main-panel.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\_rtl.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\_navbar.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\_modal.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\_mixins.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\_misc.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\_input-group.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\_images.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\_functions.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\_forms.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\_footer.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\_fixed-plugin.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\_example-pages.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\_dropdown.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\_checkboxes-radio.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\_card.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\_buttons.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\custom\_alerts.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\vendor\_rfs.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\utilities\_visibility.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\utilities\_text.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\utilities\_stretched-link.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\utilities\_spacing.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\utilities\_sizing.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\utilities\_shadows.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\utilities\_screenreaders.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\utilities\_position.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\utilities\_overflow.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\utilities\_float.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\utilities\_flex.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\utilities\_embed.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\utilities\_display.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\utilities\_clearfix.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\utilities\_borders.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\utilities\_background.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\utilities\_align.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\mixins\_visibility.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\mixins\_transition.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\mixins\_text-truncate.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\mixins\_text-hide.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\mixins\_text-emphasis.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\mixins\_table-row.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\mixins\_size.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\mixins\_screen-reader.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\mixins\_resize.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\mixins\_reset-text.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\mixins\_pagination.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\mixins\_nav-divider.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\mixins\_lists.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\mixins\_list-group.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\mixins\_image.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\mixins\_hover.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\mixins\_grid.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\mixins\_grid-framework.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\mixins\_gradients.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\mixins\_forms.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\mixins\_float.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\mixins\_deprecate.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\mixins\_clearfix.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\mixins\_caret.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\mixins\_buttons.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\mixins\_breakpoints.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\mixins\_box-shadow.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\mixins\_border-radius.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\mixins\_badge.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\mixins\_background-variant.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\mixins\_alert.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\bootstrap.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\bootstrap-reboot.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\bootstrap-grid.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\_variables.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\_utilities.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\_type.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\_transitions.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\_tooltip.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\_toasts.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\_tables.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\_spinners.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\_root.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\_reboot.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\_progress.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\_print.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\_popover.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\_pagination.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\_navbar.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\_nav.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\_modal.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\_mixins.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\_media.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\_list-group.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\_jumbotron.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\_input-group.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\_images.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\_grid.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\_functions.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\_forms.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\_dropdown.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\_custom-forms.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\_code.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\_close.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\_carousel.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\_card.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\_buttons.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\_button-group.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\_breadcrumb.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\_badge.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\bootstrap\_alert.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\_typography.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard\_buttons.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\scss\black-dashboard.scss" crc="1592986310"/>
+		<file name="Z:\printer\assets\js\plugins\sweetalert.min.js" crc="1596597967"/>
+		<file name="Z:\printer\assets\js\plugins\perfect-scrollbar.jquery.min.js" crc="1592986310"/>
+		<file name="Z:\printer\assets\js\plugins\chartjs.min.js" crc="1592986310"/>
+		<file name="Z:\printer\assets\js\plugins\bootstrap-notify.js" crc="1592986310"/>
+		<file name="Z:\printer\assets\js\core\popper.min.js" crc="1592986310"/>
+		<file name="Z:\printer\assets\js\core\jquery.min.js" crc="1592986310"/>
+		<file name="Z:\printer\assets\js\core\bootstrap.min.js" crc="1592986310"/>
+		<file name="Z:\printer\assets\js\lordicon.js" crc="1693812592"/>
+		<file name="Z:\printer\assets\js\dataTables.min.js" crc="1693812661"/>
+		<file name="Z:\printer\assets\js\dataTables.bootstrap4.min.js" crc="1693812691"/>
+		<file name="Z:\printer\assets\js\dataapproval.js" crc="1664953463"/>
+		<file name="Z:\printer\assets\js\custom.js" crc="1690270902"/>
+		<file name="Z:\printer\assets\js\chart.js" crc="1693554180"/>
+		<file name="Z:\printer\assets\js\bootstrap-datepicker.min.js" crc="1693812530"/>
+		<file name="Z:\printer\assets\js\black-dashboard.min.js" crc="1592986310"/>
+		<file name="Z:\printer\assets\js\black-dashboard.js" crc="1592986310"/>
+		<file name="Z:\printer\assets\demo\demo.js" crc="1592986310"/>
+		<file name="Z:\printer\assets\demo\demo.css" crc="1592986310"/>
+		<file name="Z:\printer\assets\css\timeline.css" crc="1690273393"/>
+		<file name="Z:\printer\assets\css\sweetalert.css" crc="1596597968"/>
+		<file name="Z:\printer\assets\css\nucleo-icons.css" crc="1592986310"/>
+		<file name="Z:\printer\assets\css\jquery.dataTables.min.css" crc="1664511699"/>
+		<file name="Z:\printer\assets\css\fontawesomev5.14.css" crc="1690273596"/>
+		<file name="Z:\printer\assets\css\font.css" crc="1664343485"/>
+		<file name="Z:\printer\assets\css\dataTables.bootstrap4.css" crc="1568671116"/>
+		<file name="Z:\printer\assets\css\cctv.css" crc="1640756619"/>
+		<file name="Z:\printer\assets\css\bootstrap-datepicker.css" crc="1690273517"/>
+		<file name="Z:\printer\assets\css\black-dashboard.min.css" crc="1592986310"/>
+		<file name="Z:\printer\assets\css\black-dashboard.css" crc="1664442979"/>
+		<file name="Z:\printer\application\views\layout\sidebar.php" crc="1693812071"/>
+		<file name="Z:\printer\application\views\layout\navbar.php" crc="1665564919"/>
+		<file name="Z:\printer\application\views\layout\footer.php" crc="1639231732"/>
+		<file name="Z:\printer\application\views\errors\html\index.html" crc="1568894925"/>
+		<file name="Z:\printer\application\views\errors\html\error_php.php" crc="1568894925"/>
+		<file name="Z:\printer\application\views\errors\html\error_general.php" crc="1568894925"/>
+		<file name="Z:\printer\application\views\errors\html\error_exception.php" crc="1568894925"/>
+		<file name="Z:\printer\application\views\errors\html\error_db.php" crc="1568894925"/>
+		<file name="Z:\printer\application\views\errors\html\error_404.php" crc="1568894925"/>
+		<file name="Z:\printer\application\views\errors\cli\index.html" crc="1568894925"/>
+		<file name="Z:\printer\application\views\errors\cli\error_php.php" crc="1568894925"/>
+		<file name="Z:\printer\application\views\errors\cli\error_general.php" crc="1568894925"/>
+		<file name="Z:\printer\application\views\errors\cli\error_exception.php" crc="1568894925"/>
+		<file name="Z:\printer\application\views\errors\cli\error_db.php" crc="1568894925"/>
+		<file name="Z:\printer\application\views\errors\cli\error_404.php" crc="1568894925"/>
+		<file name="Z:\printer\application\views\errors\index.html" crc="1568894925"/>
+		<file name="Z:\printer\application\views\template.php" crc="1693815357"/>
+		<file name="Z:\printer\application\views\tambah.php" crc="1689215428"/>
+		<file name="Z:\printer\application\views\rekap.php" crc="1665478131"/>
+		<file name="Z:\printer\application\views\masuk.php" crc="1693814550"/>
+		<file name="Z:\printer\application\views\masterp.php" crc="1693814554"/>
+		<file name="Z:\printer\application\views\login.php" crc="1689128249"/>
+		<file name="Z:\printer\application\views\listdepo.php" crc="1687752974"/>
+		<file name="Z:\printer\application\views\inputticket.php" crc="1687590380"/>
+		<file name="Z:\printer\application\views\index.html" crc="1568894925"/>
+		<file name="Z:\printer\application\views\historitiket.php" crc="1690515985"/>
+		<file name="Z:\printer\application\views\dashboard.php" crc="1693540826"/>
+		<file name="Z:\printer\application\views\alokasi.php" crc="1693812347"/>
+		<file name="Z:\printer\application\third_party\index.html" crc="1568894925"/>
+		<file name="Z:\printer\application\models\Modb.php" crc="1693796818"/>
+		<file name="Z:\printer\application\models\index.html" crc="1568894925"/>
+		<file name="Z:\printer\application\logs\index.html" crc="1568894925"/>
+		<file name="Z:\printer\application\libraries\Template.php" crc="1636962039"/>
+		<file name="Z:\printer\application\libraries\index.html" crc="1568894925"/>
+		<file name="Z:\printer\application\language\english\index.html" crc="1568894925"/>
+		<file name="Z:\printer\application\language\index.html" crc="1568894925"/>
+		<file name="Z:\printer\application\hooks\index.html" crc="1568894925"/>
+		<file name="Z:\printer\application\helpers\index.html" crc="1568894925"/>
+		<file name="Z:\printer\application\core\index.html" crc="1568894925"/>
+		<file name="Z:\printer\application\controllers\Welcome.php" crc="1568894925"/>
+		<file name="Z:\printer\application\controllers\Login.php" crc="1690513668"/>
+		<file name="Z:\printer\application\controllers\index.html" crc="1568894925"/>
+		<file name="Z:\printer\application\controllers\Home.php" crc="1693812288"/>
+		<file name="Z:\printer\application\config\user_agents.php" crc="1568894925"/>
+		<file name="Z:\printer\application\config\smileys.php" crc="1568894925"/>
+		<file name="Z:\printer\application\config\routes.php" crc="1693536974"/>
+		<file name="Z:\printer\application\config\profiler.php" crc="1568894925"/>
+		<file name="Z:\printer\application\config\mimes.php" crc="1568894925"/>
+		<file name="Z:\printer\application\config\migration.php" crc="1568894925"/>
+		<file name="Z:\printer\application\config\memcached.php" crc="1568894925"/>
+		<file name="Z:\printer\application\config\index.html" crc="1568894925"/>
+		<file name="Z:\printer\application\config\hooks.php" crc="1568894925"/>
+		<file name="Z:\printer\application\config\foreign_chars.php" crc="1568894925"/>
+		<file name="Z:\printer\application\config\doctypes.php" crc="1568894925"/>
+		<file name="Z:\printer\application\config\database.php" crc="1690182881"/>
+		<file name="Z:\printer\application\config\constants.php" crc="1636950107"/>
+		<file name="Z:\printer\application\config\config.php" crc="1689238052"/>
+		<file name="Z:\printer\application\config\autoload.php" crc="1664864278"/>
+		<file name="Z:\printer\application\cache\index.html" crc="1568894925"/>
+		<file name="Z:\printer\application\index.html" crc="1568894925"/>
+		<file name="Z:\printer\application\.htaccess" crc="1568894925"/>
+		<file name="Z:\printer\printer.sql" crc="1690182714"/>
+		<file name="Z:\printer\license.txt" crc="1568894925"/>
+		<file name="Z:\printer\index.php" crc="1568894925"/>
+		<file name="Z:\printer\depo.sql" crc="1689134482"/>
+		<file name="Z:\printer\.htaccess" crc="1626753262"/>
+	</filescache>
+</project>

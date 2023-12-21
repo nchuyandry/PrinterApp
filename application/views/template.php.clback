@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="<?=base_url()?>assets/img/cctv.png">
+  <link rel="icon" type="image/png" href="<?=base_url()?>assets/img/tvip.png">
+  <title>
+    Printer Apps | 
+	<?php if($this->uri->segment(1)=== 'tiket'){
+			echo "Histori Tiket";
+		  }else if($this->uri->segment(1)=== 'service'){
+			echo "Data Service";  
+		  }else if($this->uri->segment(1)=== 'alokasi'){
+			echo "Alokasi Printer";
+		  }else{
+			echo "Data Printer";
+		  }
+	?>
+  </title>
+  <!--     Fonts and icons     -->
+  <link href="<?=base_url()?>assets/css/font.css" rel="stylesheet" />
+  <link href="<?=base_url()?>assets/css/bootstrap-datepicker.css" rel="stylesheet" />
+  <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet">
+  <!-- Nucleo Icons -->
+  <link href="<?=base_url()?>assets/css/nucleo-icons.css" rel="stylesheet" />
+  <!-- CSS Files -->
+  <link href="<?=base_url()?>assets/css/black-dashboard.css?v=1.0.0" rel="stylesheet" />
+  <link href="<?=base_url()?>assets/css/timeline.css" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="<?=base_url()?>assets/demo/demo.css" rel="stylesheet" />
+  <link href="<?=base_url()?>assets/css/dataTables.bootstrap4.css" rel="stylesheet" /><!--
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css" rel="stylesheet" />-->
+  <link href="<?=base_url()?>assets/css/sweetalert.css" rel="stylesheet">		
+  <script type="text/javascript" src="<?=base_url() ?>assets/js/plugins/sweetalert.min.js"> </script> 
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+  <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap4.min.js"> </script>
+  <script>
+  	$(document).ready(function () {
+	    $('#dataTable').DataTable();
+	}); 
+  </script>
+  <style>
+  	.dataTables_length label, .dataTables_filter label  {
+  		display: inline-flex;
+  		margin-bottom: 0.5rem;
+  		vertical-align: middle;
+  		line-height: 2;
+  	}
+  	.dataTables_length .form-control{
+		vertical-align: middle;
+	}
+  	.dataTables_filter {
+  		text-align: right;	
+  	}
+  	.paginate_button .page-link{
+		color: #000;
+	}
+	.modal{
+		top: -87px!important;
+	}
+	.datepicker {
+	    padding: 7px;
+	    -webkit-border-radius: 4px;
+	    -moz-border-radius: 4px;
+	    border-radius: 4px;
+	    direction: ltr;
+	}
+	.card-stats .info-icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #e14eca;
+    background-image: linear-gradient(to bottom left,#e14eca,#ba54f5,#e14eca);
+    background-size: 210% 210%;
+    background-position: 100% 0
+}
+
+.card-stats .info-icon i {
+    color: #fff;
+    font-size: 1.7em;
+    padding: 14px 13px
+}
+
+.card-stats .info-icon.icon-danger {
+    background: #fd5d93;
+    background-image: linear-gradient(to bottom left,#fd5d93,#ec250d,#fd5d93);
+    background-size: 210% 210%;
+    background-position: 100% 0
+}
+
+.card-stats .info-icon.icon-warning {
+    background: #ff8d72;
+    background-image: linear-gradient(to bottom left,#ff8d72,#ff6491,#ff8d72);
+    background-size: 210% 210%;
+    background-position: 100% 0
+}
+
+.card-stats .info-icon.icon-success {
+    background: #00f2c3;
+    background-image: linear-gradient(to bottom left,#00f2c3,#0098f0,#00f2c3);
+    background-size: 210% 210%;
+    background-position: 100% 0
+}
+
+.card-stats .info-icon.icon-info {
+    background: #1d8cf8;
+    background-image: linear-gradient(to bottom left,#1d8cf8,#3358f4,#1d8cf8);
+    background-size: 210% 210%;
+    background-position: 100% 0
+}
+
+.card-stats .info-icon.icon-primary {
+    background: #e14eca;
+    background-image: linear-gradient(to bottom left,#4949e7,#413df8,#0021db);
+    background-size: 210% 210%;
+    background-position: 100% 0
+}
+
+.card-stats .numbers {
+    text-align: right
+}
+	.tim-icons {
+	    display: inline-block;
+	    font: normal normal normal 3em/1 "Nucleo";
+	    vertical-align: middle;
+	    speak: none;
+	    text-transform: none;
+	    -webkit-font-smoothing: antialiased;
+	    -moz-osx-font-smoothing: grayscale;
+	}
+	.card-stats .info-icon i {
+	    color: #fff;
+	    font-size: 1.5em;
+	    padding: 14px 13px;
+	}
+  </style>
+</head>
+
+<body class="white-content body">
+  <div class="wrapper">
+    <?php $this->load->view('layout/sidebar')?>
+    <div class="main-panel" data="blue">
+      <!-- Navbar -->
+      <?php $this->load->view('layout/navbar')?>
+      <!-- End Navbar -->
+      <div class="content">
+        <?php echo $contents?>
+      </div>
+      <?php $this->load->view('layout/footer')?>
+    </div>
+  </div>
+
+
+  <!--   Core JS Files   -->
+  <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+  <!--<script src="<?=base_url()?>assets/js/core/jquery.min.js"></script>-->
+  <script src="<?=base_url()?>assets/js/core/popper.min.js"></script>
+  <script src="<?=base_url()?>assets/js/core/bootstrap.min.js"></script>
+  <script src="<?=base_url()?>assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/js/bootstrap-datepicker.min.js"></script>
+  <script src="<?=base_url()?>assets/js/plugins/chartjs.min.js" ></script>
+  <!--  Notifications Plugin    -->
+  <script src="<?=base_url()?>assets/js/plugins/bootstrap-notify.js"></script>
+  <!-- Control Center for Black Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="<?=base_url()?>assets/js/black-dashboard.min.js?v=1.0.0"></script>
+  <!--<script src="<?=base_url()?>assets/js/chart.js"></script>-->
+<?php if ($this->session->flashdata('welcome')) { ?>
+	<script>
+		$.notify({
+			icon: "fa fa-check-circle",
+			message: "<?=$this->session->flashdata('welcome')?>"
+		},{
+			type: "success",
+			allow_dismiss: false,
+			placement: {
+				from: "top",
+				align: "right"
+			},
+			animate: {
+				enter: 'animated fadeInDown',
+				exit: 'animated fadeOutUp'
+			},
+		});
+   </script>
+<?php }else if ($this->session->flashdata('saved')) {?>
+	<script>
+		$.notify({
+			icon: "fa fa-check-circle",
+			message: "<?=$this->session->flashdata('saved')?>"
+		},{
+			type: "success",
+			allow_dismiss: false,
+			placement: {
+				from: "top",
+				align: "right"
+			},
+			animate: {
+				enter: 'animated fadeInDown',
+				exit: 'animated fadeOutUp'
+			},
+		});
+   </script>
+<?php }else if ($this->session->flashdata('updated')) {?>
+<script>
+		$.notify({
+			icon: "fa fa-check-circle",
+			message: "<?=$this->session->flashdata('updated')?>"
+		},{
+			type: "success",
+			allow_dismiss: false,
+			placement: {
+				from: "top",
+				align: "right"
+			},
+			animate: {
+				enter: 'animated fadeInDown',
+				exit: 'animated fadeOutUp'
+			},
+		});
+   </script>
+<?php }?>
+<script>
+function myFunction(id){
+	alert(id);
+	
+}
+</script>
+<script>
+/*$(document).ready(function()
+{
+	 $('#model').change(function(){
+		var id=$(this).val();
+		
+		$.ajax({  
+	        url:"<?php echo base_url()?>home/getmodel",
+	        method:"GET",  
+	        dataType:"JSON", 
+	        data : {id:id},
+	        success: function(data){
+	            for(var i=0; i<data.length; i++){
+	            	$("#sserial").val(data[i].serialnumber);
+	            }
+            }
+   		});
+	});
+});*/
+
+$(document).on('change','#status',function(){
+	var x = $(this).val();
+	if (x == "Fixed") {
+		document.getElementById('act').style.display = 'block';
+	} else {
+		document.getElementById('act').style.display = 'none';
+	}
+	
+	if(x == "Pending"){
+		document.getElementById('pend').style.display = 'block';
+	} else {
+		document.getElementById('pend').style.display = 'none';
+	}
+});
+	
+$(document).on('change','#sn',function(){
+		var id=$(this).val();
+		$.ajax({  
+	        url:"<?php echo base_url()?>home/getmodelid",
+	        method:"GET",  
+	        dataType:"JSON", 
+	        data : {id:id},
+	        success: function(data){
+	        	for(var i=0; i<data.length; i++){
+					$('#kode').val(data[i].kodebrg);
+					$('#model').val(data[i].model);
+					$('#tipe').val(data[i].tipe);
+					$('#serial').val(data[i].serialnumber);
+					$('#depo').val(data[i].daridepo);
+					$('#divisi').val(data[i].divisi);
+				}
+            }
+   		});
+});
+$(document).on('click','#showdetail',function()
+{
+	var id=$(this).attr('data');
+	$.ajax({
+		type : "GET",
+		url  : "<?php echo base_url()?>home/getdata",
+		dataType : "JSON",
+		data : {id:id},
+		success: function(data){
+			//$("#depo thead").empty();
+          
+           // for(var i=0; i<data.length; i++){
+			//	$("#depo thead").append("<tr><th>Depo</th><td>" + data.namadepo + "</td></tr><tr><th>Alamat </th><td>" + data.alamat + "</td></tr><tr><th>Nama PIC</th><td>" + data.namapic + "</td></tr><tr><th>No. Telp PIC</th><td>" + data.telppic + "</td></tr>");
+			//}
+			$.each(data,function(iddepo,namadepo, alamat, namapic, telppic){
+				$('#detailmodal').modal('show');
+	            $('#namadepo').html(data.namadepo);
+	            $('#alamat').html(data.alamat);
+	            $('#namapic').html(data.namapic);
+	            $('#telppic').html(data.telppic);
+	            $('#id').val(data.iddepo);
+	        });
+	    }
+	});
+});
+$(document).on('click','#detailpr',function()
+{
+	var id=$(this).attr('data');
+	$.ajax({
+		type : "GET",
+		url  : "<?php echo base_url()?>home/getdetaillog",
+		dataType : "JSON",
+		data : {id:id},
+		success: function(data){
+			
+			$("#timeline ul").empty();
+			for(var i=0; i<data.length; i++){
+				
+				const d = new Date(data[i].logtgl);
+				const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+				const formatted = d.toLocaleDateString(undefined, options);
+				$("#timeline ul").append("<li><div class='card timeline_content'><div class='card-header'><span><img class='photo' src='<?php echo base_url()?>assets/img/profile.png' style='width:50px'/> " + data[i].loguser + "</span><h5><i class='fas fa-clock'></i> " + formatted + "</h5></div><div class='card-body'><p>" + data[i].logdata + ".</p></div></div></li>");
+			}
+	    }
+	});
+});
+
+
+/*$(document).on('click','#showdetail',function()
+{
+	var id=$(this).attr('data');
+	$.ajax({  
+        url:"<?php echo base_url() ?>home/getlayanan/",
+        method:"GET",  
+        dataType:"JSON",          
+		data : {id:id},
+        success:function(data){
+        	$.each(data,function(iddepo,jenis, nosid){  
+				$('#detailmodal').modal('show');
+	            $('[name="jenis"]').val(data.jenis);
+	            $('[name="nosid"]').val(data.nosid);
+	            $('#id').val(data.iddepo);
+	        });
+	    }
+	});
+});*/
+
+$(document).on('click','#submitdata',function(e){
+        e.preventDefault()
+        var tgl=$('[name="tgl"]').val();
+        var kode=$('[name="kode"]').val();
+        var model=$('[name="model"]').val();
+        var tipe=$('[name="tipe"]').val();
+        var sn=$('[name="sn"]').val();
+        
+        $.ajax({
+            type : "POST",
+            url  : "<?php echo base_url()?>submitdata",
+            data : {tgl:tgl,kode:kode,model:model,tipe:tipe,sn:sn},
+            success: function(data){
+            	$.notify({
+					icon: "fa fa-check-circle",
+					message: "Data Saved!"
+				},{
+					type: "success",
+					timer: 2000,
+					allow_dismiss: false,
+					placement: {
+						from: "top",
+						align: "right"
+					},
+					animate: {
+						enter: 'animated fadeInDown',
+						exit: 'animated fadeOutUp'
+					},
+				});
+            	setTimeout(function(){ location.reload(); }, 3000);
+            }
+        });
+        
+});
+$(document).on('click','#savedata',function(e){
+        e.preventDefault()
+        var tgl=$('[name="tgl"]').val();
+        var kode=$('[name="kode"]').val();
+        var serial=$('[name="serial"]').val();
+        var model=$('[name="model"]').val();
+        var depo=$('[name="depo"]').val();
+        var divisi=$('[name="divisi"]').val();
+        var keterangan=$('[name="keterangan"]').val();
+        var status=$('[name="status"]').val();
+        
+        $.ajax({
+            type : "POST",
+            url  : "<?php echo base_url()?>savedata",
+            data : {tgl:tgl,kode:kode,serial:serial,model:model,status:status,depo:depo,divisi:divisi,keterangan:keterangan,status:status},
+            success: function(data){
+            	//console.log(data);
+            	$.notify({
+					icon: "fa fa-check-circle",
+					message: "Data Saved!"
+				},{
+					type: "success",
+					timer: 2000,
+					allow_dismiss: false,
+					placement: {
+						from: "top",
+						align: "right"
+					},
+					animate: {
+						enter: 'animated fadeInDown',
+						exit: 'animated fadeOutUp'
+					},
+				});
+            	setTimeout(function(){ location.reload(); }, 3000);
+            }
+        });
+        
+});
+
+$(document).on('click','#submitalokasi',function(e){
+        e.preventDefault()
+        var tglalokasi=$('[name="tglalokasi"]').val();
+        var kode=$('[name="kode"]').val();
+        var serial=$('[name="serial"]').val();
+        var depo=$('[name="depo"]').val();
+        var divisi=$('[name="divisi"]').val();
+        
+        $.ajax({
+            type : "POST",
+            url  : "<?php echo base_url()?>savealokasi",
+            data : {tglalokasi:tglalokasi,kode:kode,serial:serial,depo:depo,divisi:divisi},
+            success: function(data){
+            	//console.log(data);
+            	$.notify({
+					icon: "fa fa-check-circle",
+					message: "Data Saved!"
+				},{
+					type: "success",
+					timer: 2000,
+					allow_dismiss: false,
+					placement: {
+						from: "top",
+						align: "right"
+					},
+					animate: {
+						enter: 'animated fadeInDown',
+						exit: 'animated fadeOutUp'
+					},
+				});
+            	setTimeout(function(){ location.reload(); }, 3000);
+            }
+        });
+        
+});
+
+$(document).on('click','#alokasi',function()
+{
+	var serialnumber=$(this).attr('data');
+	$.ajax({
+		type : "GET",
+		url  : "<?php echo base_url()?>home/getbysn",
+		dataType : "JSON",
+		data : {serialnumber:serialnumber},
+		success: function(data){
+			$.each(data,function(kodebrg,model,tipe,serialnumber){
+				$('#editmodal').modal('show');
+	            $('[name="serial"]').val(data.serialnumber);
+	            $('[name="kode"]').val(data.kodebrg);
+	            $('[name="model"]').val(data.model);
+	            $('#serial').val(data.serialnumber);
+	        });
+	    }
+	});
+});
+
+$(document).on('click','#editprint',function()
+{
+	var serialnumber=$(this).attr('data');
+	$.ajax({
+		type : "GET",
+		url  : "<?php echo base_url()?>home/getbysn",
+		dataType : "JSON",
+		data : {serialnumber:serialnumber},
+		success: function(data){			
+				$('#editmodal').modal('show');
+	            $('[name="tgl"]').val(data.tgl);
+	            $('[name="serial"]').val(data.serialnumber);
+	            $('[name="kode"]').val(data.kodebrg);
+	            $('[name="model"]').val(data.model);
+	            $('[name="depo"]').val(data.fromdepo);
+	            $('[name="div"]').val(data.divisi);
+	            $('[name="status"]').val(data.status);
+	            $('#serial').val(data.serialnumber);
+	            if(data.status == "On Progress"){
+	            	$("#stats select").empty();
+					$("#stats select").append("<option value='' selected>--Pilih--</option><option value='Pending'>Pending</option><option value='Fixed'>Fixed</option>");
+				}else if(data.status == "Pending"){
+					$("#stats select").empty();
+					$("#stats select").append("<option value='' selected>--Pilih--</option><option value='Continue'>Continue</option><option value='Fixed'>Fixed</option>");
+				}else if(data.status == "Continue"){
+					$("#stats select").empty();
+					$("#stats select").append("<option value='' selected>--Pilih--</option><option value='Fixed'>Fixed</option>");
+				}else{
+					$("#stats select").empty();
+					$("#stats select").append("<option value='' selected>--Pilih--</option><option value='On Progress'>On Progress</option><option value='Pending'>Pending</option><option value='Continue'>Continue</option><option value='Fixed'>Fixed</option>");
+				}
+	    }
+	});
+});
+
+$(document).on('click','#x',function(){
+        $.ajax({
+        	url  : "<?php echo base_url()?>home/updatedata",
+            type : "POST",
+            data : {
+            			serialnumber:$('#serial').val(),
+            			kodebrg:$('#kode').val(),
+            			status:$('#status').val(),
+            			action:$('#action').val()
+            			
+            },
+            success: function(data){
+            	//console.log({editdepo:editdepo,editalamat:editalamat,editpic:editpic,edittelp:edittelp,id_update:id_update});
+                alert(data);
+                $.notify({
+					icon: "fa fa-check-circle",
+					message: "Data Updated!"
+				},{
+					type: "success",
+					allow_dismiss: false,
+					placement: {
+						from: "top",
+						align: "right"
+					},
+					animate: {
+						enter: 'animated fadeInDown',
+						exit: 'animated fadeOutUp'
+					},
+				});
+				$('.modal').modal('hide');	
+               // alert('Data Updated Successfully !');
+              //setTimeout(function(){ location.reload(); }, 3000);
+            }
+        });
+});
+</script>
+<script>
+/*$(document).ready(function() {
+      // Javascript method's body can be found in assets/js/demos.js
+      chart.initDashboardPageCharts();
+});*/
+		gradientChartOptionsConfigurationWithTooltipGreen = {
+	      maintainAspectRatio: false,
+	      legend: {
+	        display: false
+	      },
+	      tooltips: {
+	        backgroundColor: '#f5f5f5',
+	        titleFontColor: '#333',
+	        bodyFontColor: '#666',
+	        bodySpacing: 4,
+	        xPadding: 12,
+	        mode: "nearest",
+	        intersect: 0,
+	        position: "nearest"
+	      },
+	      responsive: true,
+	      scales: {
+	        yAxes: [{
+	          barPercentage: 1.6,
+	          gridLines: {
+	            drawBorder: false,
+	            color: 'rgba(29,140,248,0.0)',
+	            zeroLineColor: "transparent",
+	          },
+	          ticks: {
+	            suggestedMin: 0,
+	            suggestedMax: 25,
+	            padding: 20,
+	            fontColor: "#9e9e9e"
+	          }
+	        }],
+	        xAxes: [{
+	          barPercentage: 1.6,
+	          gridLines: {
+	            drawBorder: false,
+	            color: 'rgba(0,242,195,0.1)',
+	            zeroLineColor: "transparent",
+	          },
+	          ticks: {
+	            padding: 20,
+	            fontColor: "#9e9e9e"
+	          }
+	        }]
+	      }
+	    };
+	    
+		gradientChartOptionsConfigurationWithTooltipPurple = {
+	      maintainAspectRatio: false,
+	      legend: {
+	        display: false
+	      },
+
+	      tooltips: {
+	        backgroundColor: '#f5f5f5',
+	        titleFontColor: '#333',
+	        bodyFontColor: '#666',
+	        bodySpacing: 4,
+	        xPadding: 12,
+	        mode: "nearest",
+	        intersect: 0,
+	        position: "nearest"
+	      },
+	      responsive: true,
+	      scales: {
+	        yAxes: [{
+	          barPercentage: 1.6,
+	          gridLines: {
+	            drawBorder: false,
+	            color: 'rgba(29,140,248,0.0)',
+	            zeroLineColor: "transparent",
+	          },
+	          ticks: {
+	            suggestedMin: 0,
+	            suggestedMax: 25,
+	            padding: 20,
+	            fontColor: "#9a9a9a"
+	          }
+	        }],
+
+	        xAxes: [{
+	          barPercentage: 1.6,
+	          gridLines: {
+	            drawBorder: false,
+	            color: 'rgba(225,78,202,0.1)',
+	            zeroLineColor: "transparent",
+	          },
+	          ticks: {
+	            padding: 20,
+	            fontColor: "#9a9a9a"
+	          }
+	        }]
+	      }
+	    };
+	    
+		var ctx = document.getElementById("TotalP").getContext("2d");
+	    var gradientStroke = ctx.createLinearGradient(0, 230, 0, 50);
+
+	    gradientStroke.addColorStop(1, 'rgba(72,72,176,0.2)');
+	    gradientStroke.addColorStop(0.4, 'rgba(66,134,121,0.0)'); //green colors
+	    gradientStroke.addColorStop(0, 'rgba(66,134,121,0)'); //green colors
+
+	    var data = {
+	      labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+	      datasets: [{
+	        label: "Total Printers",
+	        fill: true,
+	        backgroundColor: gradientStroke,
+	        borderColor: '#d048b6',
+	        borderWidth: 2,
+	        borderDash: [],
+	        borderDashOffset: 0.0,
+	        pointBackgroundColor: '#d048b6',
+	        pointBorderColor: 'rgba(255,255,255,0)',
+	        pointHoverBackgroundColor: '#d048b6',
+	        pointBorderWidth: 20,
+	        pointHoverRadius: 4,
+	        pointHoverBorderWidth: 15,
+	        pointRadius: 4,
+	        data: [<?php foreach ($chartp as $data) { echo $data->total . ",";}?>],
+	      },{
+	      	label: "Total Fixed",
+	        fill: true,
+	        backgroundColor: gradientStroke,
+	        borderColor: '#23f533',
+	        borderWidth: 2,
+	        borderDash: [],
+	        borderDashOffset: 0.0,
+	        pointBackgroundColor: '#23f533',
+	        pointBorderColor: 'rgba(255,255,255,0)',
+	        pointHoverBackgroundColor: '#23f533',
+	        pointBorderWidth: 20,
+	        pointHoverRadius: 4,
+	        pointHoverBorderWidth: 15,
+	        pointRadius: 4,
+	        data: [<?php foreach ($chtotfix as $data) { echo $data->total . ",";}?>],
+	      },{
+	      	label: "Total Pending",
+	        fill: true,
+	        backgroundColor: gradientStroke,
+	        borderColor: '#efbc21',
+	        borderWidth: 2,
+	        borderDash: [],
+	        borderDashOffset: 0.0,
+	        pointBackgroundColor: '#efbc21',
+	        pointBorderColor: 'rgba(255,255,255,0)',
+	        pointHoverBackgroundColor: '#efbc21',
+	        pointBorderWidth: 20,
+	        pointHoverRadius: 4,
+	        pointHoverBorderWidth: 15,
+	        pointRadius: 4,
+	        data: [<?php foreach ($chtotpend as $data) { echo $data->total . ",";}?>],
+	      },{
+	      	label: "Total On Progress",
+	        fill: true,
+	        backgroundColor: gradientStroke,
+	        borderColor: '#efbc21',
+	        borderWidth: 2,
+	        borderDash: [],
+	        borderDashOffset: 0.0,
+	        pointBackgroundColor: '#efbc21',
+	        pointBorderColor: 'rgba(255,255,255,0)',
+	        pointHoverBackgroundColor: '#efbc21',
+	        pointBorderWidth: 20,
+	        pointHoverRadius: 4,
+	        pointHoverBorderWidth: 15,
+	        pointRadius: 4,
+	        data: [<?php foreach ($ as $data) { echo $data->total . ",";}?>],
+	      }]
+	    };
+
+	    var myChart = new Chart(ctx, {
+	      type: 'line',
+	      data: data,
+	      options: gradientChartOptionsConfigurationWithTooltipGreen
+	    });
+ </script>
+</body>
+
+</html>
